@@ -8,6 +8,9 @@ Based on:
 - https://blog.ionelmc.ro/2014/05/25/python-packaging/#the-structure
 """
 
+import subprocess
+call_process = subprocess.Popen(['ls', '-l'], shell=True)
+
 # Standard Python Libraries
 from glob import glob
 from os.path import basename, splitext
